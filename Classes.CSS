@@ -107,8 +107,6 @@ header{
     background-color: #f1f1f1;
 }
 
-
-
 .Group{
     position: relative;
     display: inline-block;
@@ -312,79 +310,60 @@ header{
     padding-bottom: 40px;
 }
 
-.section_5 ul{
-    margin: 0;
-    padding: 0;
+.styled-list {
+    list-style-type: none; 
+    padding: 0; 
 }
 
-.section_5 li{
-    padding-bottom: 30px;
+.styled-list ul {
+    text-align: center;
 }
 
-.image_container{
-    position: relative;
-    display: block;
+.styled-list li {
+    display:inline-block;
+    max-height: 420px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgba(20, 16, 36, 0.2); 
+    margin-bottom: 30px;
 }
 
-.text{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translate(-50%); 
-    padding: 10px; 
-}
-
-.text h1{
-    color: white;
+.styled-list h2 {
+    color: rgba(20, 16, 36, 1);
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0;
 }
 
-.text h2{
-    color: white;
+.styled-list h3{
+    color: rgba(20, 16, 36, 1);
     font-size: 50px;
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-top: 40px;
     margin: 0;
 }
 
-.text h3{
-    color: white;
+.styled-list p {
+    color: rgba(20, 16, 36, 1);
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 40px;
+    padding-top: 20px;
     margin: 0;
 }
 
-.text button{
-    display: block;
-    background-color: rgba(213, 32, 39, 1);
-    border-radius: 5px;
-    border: none;
-    width: 260px;
+.styled-list a {
+    display: inline-block; 
+    background-color: rgba(213, 32, 39, 1); 
+    color: white; 
+    border-radius: 5px; 
     height: 60px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.text a{
-    color: white;
+    width: 260px;
+    font-weight: 400; 
     font-size: 16px;
-    font-weight: 400;
-}
-
-.text2 h1{
-    color: rgba(20, 16, 36, 1);
-}
-
-.text2 h2{
-    color: rgba(20, 16, 36, 1);
-}
-
-.text2 h3{
-    color: rgba(20, 16, 36, 1);
+    line-height: 60px;
+    margin: 40px 0; 
 }
 
 .section_6{
