@@ -14,6 +14,10 @@ header{
     display: flex; 
     align-items: center; 
     background-color:  rgba(20, 16, 36, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .Logo{
@@ -41,41 +45,64 @@ header{
     cursor: pointer;
 }
 
-.list {
-    display: none;
-    list-style: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+.nav-container {
+    display: inline-block;
+    position: relative;
 }
 
-.img-container img:hover + .list {
+.nav-button {
+    cursor: pointer;
+}
+
+.nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -90px;
+    right: 0px;
+    background-color: rgba(249, 249, 249, 1);
+    z-index: 1;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.nav-container:hover .nav-list {
     display: block;
+}
+
+.nav-list a {
+    color: rgba(20, 16, 36, 1);
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list a:hover {
+    background-color: #ddd;
 }
 
 .section_1{
     background-color:  rgba(20, 16, 36, 1);
     text-align: center;
-    padding-top: 40px;
+    padding-top: 108px;
     padding-bottom: 40px;
 }
 
 .Text_1 h1{
     color: #ffffff;
     font-weight: 600; 
-    font-size: 30px; 
+    font-size: 30px;
+    margin: 0px; 
 }
 
 .Text_1 h2{
     color: #ffffff;
     font-weight: 400;
     font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .dropdown {
@@ -263,7 +290,6 @@ header{
     display: inline-block; 
     vertical-align: top; 
     padding-right: 20px;
-    
 }
 
 .photo-item img {
@@ -276,13 +302,13 @@ header{
     overflow-wrap: break-word;
 }
 
-.photo-caption h1{
+.photo-caption h2{
     font-size: 20px;
     font-weight: 600;
     color: rgba(20, 16, 36, 1);
 }
 
-.photo-caption h2{
+.photo-caption p{
     font-size: 14px;
     font-weight: 400;
     color: rgba(20, 16, 36, 0.7);
@@ -321,7 +347,6 @@ header{
 
 .styled-list li {
     display:inline-block;
-    max-height: 420px;
     width: 300px;
     border-radius: 20px;
     background-color: white;
