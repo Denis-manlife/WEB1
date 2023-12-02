@@ -11,10 +11,10 @@ a {
 }
 
 header{
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     background-color:  rgba(20, 16, 36, 1);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 10;
@@ -86,7 +86,7 @@ header{
 .section_1{
     background-color:  rgba(20, 16, 36, 1);
     text-align: center;
-    padding-top: 108px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -428,7 +428,8 @@ footer{
     text-align: center;
 }
 
-footer h1{
+.ft{
+    display: block;
     font-weight: 700;
     font-size: 18px;
     color: white;
@@ -436,7 +437,8 @@ footer h1{
     margin: 0px;
 }
 
-footer h2{
+.ft2{
+    display: block;
     font-weight: 600;
     font-size: 16px;
     color: white;
@@ -444,7 +446,7 @@ footer h2{
     margin: 0px;
 }
 
-footer h3{
+footer p{
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     font-size: 14px;
