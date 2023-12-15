@@ -14,6 +14,13 @@
         <div class="Logo">
             <a href="#"><img src="ROBO.SCHOOL.svg" width="136" height="29" alt="робоскул"></a>
         </div>
+        <div class="nav1-container">
+            <ul class="centered-list">
+                <li><a href="#1">О школе</a></li>
+                <li style="margin: 0 40px;"><a href="#2">Тренеры</a></li>
+                <li><a href="#3">Стоимость</a></li>
+            </ul>
+        </div>
         <div class="img-container">
             <a href="tel:+78000001122"><img src="Phone.png" alt="Телефон"></a>
             <div class="nav-container">
@@ -24,7 +31,10 @@
                     <a href="#3">Стоимость</a>
                 </nav>
             </div>
-        </div>    
+        </div> 
+        <div class="PhoneNav">
+            <a href="tel:+78000001122">+7 800 000 11 22</a>
+        </div>   
     </header>
     <main>
         <section class="section_1">
@@ -36,6 +46,7 @@
                 <img src="Woman.png" width="273" height="320" alt="Картинка 1">
                 <a href="#4" class="Button"> Записаться на курс</a>
             </div>
+            <div></div>
         </section>
         <section class="section_2" id="1">
             <p><span style="font-weight: 600; font-size: 2rem;">Robo School –</span> <span style="font-weight: 400; font-size: 2rem;">учреждение для формирования кадрового педагогического резерва в сфере робототехникии программирования</span></p>
@@ -149,7 +160,7 @@
         <section class="section_6" id="4">
             <h2>Запишитесь на курс со скидкой 10%</h2>
             <p>Акция действительна до 10 марта 2022 года</p>
-            <form action="/submit" method="post">
+            <form action="//httpbin.org/post" method="post">
                 <div class="form">
                     <label for="name"></label>
                     <input type="text" id="name" name="name" placeholder="Имя" required>
@@ -165,8 +176,12 @@
                     <input type="email" id="email" name="email" placeholder="E-mail" required>
                 </div>
                     
-                <div class="buttonform">
+                <div class="buttonform" style="padding-bottom: 10px;">
                     <button type="submit">Оформить заявку</button>
+                </div>
+
+                <div class="buttonform">
+                    <button type="reset">Сбросить</button>
                 </div>
             </form>
         </section>
