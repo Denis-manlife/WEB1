@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.CSS">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
         <div class="img-container">
             <a href="tel:+78000001122"><img src="Phone.png" alt="Телефон"></a>
             <div class="nav-container">
-                <img src="List.png" alt="Button Image" class="nav-button" style="width: 52px; height: 52px">
+                <button><img src="List.png" alt="Button Image" class="nav-button" style="width: 52px; height: 52px"></button>
                 <nav class="nav-list">
                     <a href="#1">О школе</a>
                     <a href="#2">Тренеры</a>
@@ -36,7 +37,7 @@
             <a href="tel:+78000001122">+7 800 000 11 22</a>
         </div>   
     </header>
-    <main>
+    <main class="">
         <section class="section_1">
             <div class="Text_1">
                 <h1>ROBO SCHOOL</h1>
@@ -162,18 +163,21 @@
             <p>Акция действительна до 10 марта 2022 года</p>
             <form action="//httpbin.org/post" method="post">
                 <div class="form">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <label>
+                        <input type="text" name="name" placeholder="Имя" required>
+                    </label>
                 </div>
                 
                 <div class="form">
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <label>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                    </label>
                 </div>
                     
                 <div class="form">
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </label>
                 </div>
                     
                 <div class="buttonform" style="padding-bottom: 10px;">

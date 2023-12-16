@@ -21,7 +21,6 @@ header{
     /* position: fixed; */
     top: 0;
     width: 100%;
-    z-index: 10;
 }
 
 .Logo{
@@ -53,6 +52,14 @@ header{
 .nav-container {
     display: inline-block;
     position: relative;
+}
+
+.nav-container button{
+    border: 0; 
+    padding: 0; 
+    margin-right: 0;
+    background-color: #141024;
+    height: 52px;
 }
 
 .nav-button {
@@ -147,11 +154,13 @@ header{
 
 .text_chisla {
     text-align: center;
+    display: flex;
+    
 }
 
 .text_chisla ul{
     list-style-type: none;
-    margin: 0px;
+    margin: 0 auto;
     padding-left: 0px;
 }
 
@@ -161,7 +170,7 @@ header{
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .text_chisla p{
@@ -188,11 +197,12 @@ header{
 
 .ZagolText{
     text-align: center;
+    display: flex;
 }
 
 .ZagolText ul{
     list-style-type: none;
-    margin: 0px;
+    margin: 0 auto;
     padding-left: 0px;
 }
 
@@ -202,7 +212,7 @@ header{
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .ZagolText p{
@@ -319,6 +329,8 @@ header{
 .styled-list {
     list-style-type: none; 
     padding: 0; 
+    width: 320px;
+    margin: 0 auto;
 }
 
 .styled-list ul {
