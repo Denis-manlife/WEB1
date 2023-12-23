@@ -154,14 +154,14 @@ header{
 
 .text_chisla {
     text-align: center;
-    display: flex;
-    
 }
 
 .text_chisla ul{
     list-style-type: none;
     margin: 0 auto;
     padding-left: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text_chisla h2{
@@ -177,6 +177,7 @@ header{
     color: rgba(20, 16, 36, 0.7);
     font-size: 1.6rem;
     font-weight: 400;
+    padding-left: 0px;
 }
 
 .section_3{
@@ -204,6 +205,8 @@ header{
     list-style-type: none;
     margin: 0 auto;
     padding-left: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ZagolText h3{
@@ -274,6 +277,10 @@ header{
     padding-left: 10px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+}
+.photos-container ul{
+    display: flex;
 }
 
 .photo-item {
@@ -329,12 +336,14 @@ header{
 .styled-list {
     list-style-type: none; 
     padding: 0; 
-    width: 320px;
     margin: 0 auto;
 }
 
 .styled-list ul {
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .styled-list li {
